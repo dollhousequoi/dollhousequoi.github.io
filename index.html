@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Демоэкзамен — Реклама и PR</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f7;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .search {
+      margin-bottom: 30px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 16px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    .example {
+      background: #f0f4ff;
+      border-left: 4px solid #4f46e5;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 30px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Демоэкзамен</h1>
+  <p>Реклама и связи с общественностью</p>
+</header>
+
+<div class="container">
+
+  <div class="search">
+    <input
+      type="text"
+      id="search"
+      placeholder="Поиск: ЦА, SWOT, KPI, пресс-релиз..."
+      onkeyup="searchCards()"
+    >
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>🎯 Целевая аудитория</h2>
+
+      <p>
+        При описании целевой аудитории указываем:
+      </p>
+
+      <ul>
+        <li>пол;</li>
+        <li>возраст;</li>
+        <li>географию;</li>
+        <li>уровень дохода;</li>
+        <li>интересы;</li>
+        <li>потребности;</li>
+        <li>проблемы и боли;</li>
+        <li>поведение при покупке.</li>
+      </ul>
+
+      <div class="example">
+        <strong>Пример:</strong><br>
+        Основную целевую аудиторию составляют мужчины и женщины
+        в возрасте 18–30 лет, проживающие в крупных городах,
+        активно пользующиеся социальными сетями.
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>📊 SWOT-анализ</h2>
+
+      <p>
+        SWOT состоит из четырёх частей:
+      </p>
+
+      <ul>
+        <li><strong>S — Strengths</strong> — сильные стороны;</li>
+        <li><strong>W — Weaknesses</strong> — слабые стороны;</li>
+        <li><strong>O — Opportunities</strong> — возможности;</li>
+        <li><strong>T — Threats</strong> — угрозы.</li>
+      </ul>
+
+      <div class="example">
+        <strong>Важно:</strong><br>
+        Сильные и слабые стороны — внутренние факторы.<br>
+        Возможности и угрозы — внешние факторы.
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>📢 Рекламная кампания</h2>
+
+      <p>
+        Базовая структура:
+      </p>
+
+      <ol>
+        <li>Определить цель.</li>
+        <li>Определить целевую аудиторию.</li>
+        <li>Сформулировать рекламное сообщение.</li>
+        <li>Выбрать каналы продвижения.</li>
+        <li>Определить бюджет.</li>
+        <li>Установить KPI.</li>
+        <li>Оценить результат.</li>
+      </ol>
+    </div>
+
+
+    <div class="card">
+      <h2>📈 KPI</h2>
+
+      <p>
+        KPI — показатели, по которым оценивают эффективность.
+      </p>
+
+      <ul>
+        <li>охват;</li>
+        <li>показы;</li>
+        <li>клики;</li>
+        <li>CTR;</li>
+        <li>количество заявок;</li>
+        <li>продажи;</li>
+        <li>конверсия.</li>
+      </ul>
+
+      <div class="example">
+        <strong>CTR:</strong><br>
+        количество кликов ÷ количество показов × 100%
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>📰 Пресс-релиз</h2>
+
+      <p>Структура пресс-релиза:</p>
+
+      <ol>
+        <li>Заголовок.</li>
+        <li>Лид — краткая суть события.</li>
+        <li>Основной текст.</li>
+        <li>Цитата представителя компании.</li>
+        <li>Справка о компании.</li>
+        <li>Контактная информация.</li>
+      </ol>
+
+      <div class="example">
+        В первом абзаце желательно ответить на вопросы:
+        кто, что, где, когда и почему.
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>🖥 Оформление работы</h2>
+
+      <p>
+        Перед сдачей задания обязательно проверить:
+      </p>
+
+      <ul>
+        <li>название файла;</li>
+        <li>структуру документа;</li>
+        <li>заголовки;</li>
+        <li>таблицы;</li>
+        <li>орфографию;</li>
+        <li>наличие всех пунктов задания;</li>
+        <li>место сохранения файла.</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  Справочник для подготовки к демонстрационному экзамену
+</footer>
+
+
+<script>
+function searchCards() {
+
+  let input = document.getElementById("search");
+  let filter = input.value.toLowerCase();
+
+  let cards = document.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+
+    let text = cards[i].innerText.toLowerCase();
+
+    if (text.includes(filter)) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+
+  }
+}
+</script>
+
+</body>
+</html>
